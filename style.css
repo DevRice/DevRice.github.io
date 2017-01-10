@@ -1,0 +1,144 @@
+body {
+  margin: 30px;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+#blog-title,
+#work-title{
+  border-radius: 10px;
+  background-color: #555;
+  padding: 10px;
+}
+h1{
+  color: white;
+  font-family: Georgia;
+}
+#name{
+  color: #333;
+  font-size: 180px;
+}
+.btn {
+  width: 175px;
+  height: 60px;
+  margin: 40px 50px;
+  font-family: Georgia;
+  font-size: 35px;
+}
+.btn:hover{
+  transform: scale(1.05);
+}
+.github{
+  background-color: #333;
+}
+.fa-github,
+.fa-stack-overflow,
+.fa-free-code-camp {
+  color: white;
+}
+.fcc{
+  background-color: #196F3D;
+}
+.so{
+  background-color: #FFAF22;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+.container{
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.blog-post{
+	background: #fff;
+	margin: 0 auto 2em auto;
+	padding: 35px 30px;
+	box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
+}
+
+.blog-content{
+	font-size: 1em;
+	border-left: 5px solid #8EE5EE;
+	padding-left: 15px;
+}
+
+.blog-title{
+	font-size: 2.5em;
+	margin-top: 5px;
+}
+
+.date{
+	font-size: 1em;
+	font-weight: 400;
+	color: #9C9C9C;
+	margin-top: -10px;
+	text-decoration: underline;
+	text-decoration-color: currentColor;
+}
+
+.post-link{
+	color: #009ACD;
+	font-style: italic;
+	transition: all 0.4s;
+}
+
+.post-link:hover{
+	color: #005c7b;
+	text-decoration: underline;
+	text-decoration-color: currentColor;
+	cursor: pointer;
+}
