@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2 {
+    font-family: Roboto Condensed;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+/* Nav Bar */
+
+
+/* Fixing */
+
+nav {
+    background: #BBC5AA;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* Formatting */
+
+.flex-nav a {
+    color: #FBFCFC;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+a:hover,
+.flex-nav a.nav-active {
+    color: #BBC5AA;
+    background: #FBFCFC;
+}
+
+
+/* Flex Work */
+
+.flex-nav ul {
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex-nav li {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+}
+
+
+/* Home */
+
+.home {
+    margin: 150px auto 200px auto;
+}
+
+.home-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+/* Avatar */
+
+.crop {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+img.avatar {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+
+/* About me */
+
+.aboutme-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #0F8B8D;
+}
+
+.aboutme-inner {
+    padding: 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.aboutme-inner p {
+    text-align: justify;
+    color: #FFF;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-bottom: 50px;
+    font-size: 120%;
+}
+
+
+/* Gallery */
+
+.gallery-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.gallery-item > a > img {
+    padding: 5px;
+    -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
+    max-width: 250px;
+    min-width: 60px;
+}
+
+/* Connect */
+
+.conn-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #0F8B8D;
+}
+
+.conn-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 70vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.conn-inner > i {
+    padding: 40px;
+    font-size: 100px;
+}
+
+
+/* MEDIA */
+
+@media all and (max-width:1000px) {
+    /* Flex-Nav */
+    .flex-nav ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .flex-nav li {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 50%;
+                flex: 1 1 50%;
+    }
+}
+
+@media all and (max-width:500px) {
+    /* Flex-Nav */
+    .flex-nav li, .gallery-item > a > img{
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+}
