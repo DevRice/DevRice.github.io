@@ -26,7 +26,7 @@ h2 {
 	text-transform: uppercase;
 }
 
-a {
+#navbar a {
 	text-decoration: none;
 	color: #99A3A4;
 	margin-left: 60px;
@@ -34,7 +34,7 @@ a {
 	position: relative;
 }
 
-a::after {
+#navbar a::after {
 	content: '';
 	display: inline-block;
 	width: 0;
@@ -46,11 +46,11 @@ a::after {
 	transition: 0.2s ease-in;
 }
 
-a:hover::after {
+#navbar a:hover::after {
 	width: 100%;
 }
 
-a:hover {
+#navbar a:hover {
 	color: #EB984E;
 }
 
@@ -83,98 +83,29 @@ h3 {
 	max-height: 200px;
 }
 
-.contact-wrap {
-	width: 50%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding-bottom: 100px;
-}
-
-.contact-wrap * {
-	box-sizing: border-box;
-}
-
-.flex-outter,
-.flex-inner {
-	list-style-type: none;
-	padding: 0;
-}
-
-.flex-outter {
-	max-width: 800px;
-}
-
-.flex-outter li,
-.flex-inner {
+.connect-wrap {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
+	
 }
 
-.flex-inner {
-	padding: 0 8px;
-	justify-content: space-between;
+.connect-items > a {
+	color: #424949;
+	font-size: 72px;
+	
+	padding: 50px;
+}
+	
+
+#navbar .linkActive {
+	font-size: 18px;
+	color: #EB984E;
 }
 
-.flex-outter > li:not(:last-child) {
-	margin-bottom: 20px;
+footer {
+	text-align: center;
+	padding: 30px;
+	font-size: 12px;
 }
 
-.flex-outter li label,
-.flex-outter li p {
-	padding: 8px;
-	font-weight: 300;
-	letter-spacing: 0.09em;
-	text-transform: uppercase;
-}
-
-.flex-outter > li > label,
-.flex-outter li p {
-	flex: 1 0 120px;
-	max-width: 220px;
-}
-
-.flex-outter > li > label + *,
-.flex-inner {
-	flex: 1 0 120px;
-}
-
-.flex-outter li p {
-	margin: 0;
-}
-
-.flex-outer li input:not([type='radio']),
-.flex-outer li textarea {
-	padding: 15px;
-	border: none;
-}
-
-.flex-inner li {
-	width: 100px;
-}
-
-#submit {
-	width: 130px;
-	height: 50px;
-	border: 2px solid #EB984E; 
-	background: #FFF;
-	transition: all 0.3s;
-}
-
-#submit:hover {
-	background: #EB984E;
-	color: #FFF;
-}
-
-.notification {
-	display: none;
-	width: 800px;
-    padding: 20px;
-    color: #FFF;
-    opacity: 0;
-    margin-bottom: 15px;
-	border-radius: 10px;
-}
-.notification.warning {background: #E74C3C;}
-
-.notification.success {background: #52BE80;}

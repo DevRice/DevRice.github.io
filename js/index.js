@@ -10,3 +10,15 @@ function toggleActive() {
 
 
 navLinks.forEach(a => a.addEventListener('click', toggleActive));
+
+// JQuery...
+
+$(document).ready(function () {
+	$("#navbar a").click(function () {
+		var $href = $(this).attr("href");
+		$("body").stop().animate({
+			scrollTop: $($href).offset().top
+		}, 1000);
+		return false;
+	});
+});

@@ -14,10 +14,10 @@
 
 <body>
 <nav id="navbar">
-  <h2>Alex Nite</h2>
-  <a id="homeElement" href="#home" class="linkActive">Home</a>
-  <a href="#work">Work</a>
-  <a href="#contact">Contact</a>
+		<h2>Alex Nite</h2>
+		<a id="homeElement" href="#home" class="linkActive">Home</a>
+		<a href="#work">Work</a>
+		<a href="#connect">Connect</a>
 </nav>
 
 <div class="site-wrap">
@@ -41,39 +41,20 @@
   </div>
 </div>
 
-<div id="contact">
-	<div class="contact-wrap">
-		<form method="post" action="contact.php">
-			<ul class="flex-outter">
-				<li>
-					<label for="full-name">Full Name*</label>
-					<input required type="name" id="full-name" placeholder="Alex Nite">
-				</li>
-				<li>
-					<label for="email">Email*</label>
-					<input required type="email" id="email" placeholder="alexnitedev@gmail.com">
-				</li>
-				<li>
-					<label for="message">Message*</label>
-					<textarea required rows="6" type="text" id="message" placeholder="Hello!"></textarea>
-				</li>
-				<li>
-					<p>Are you a human?*</p>
-					<ul class="flex-inner">
-						<li>
-							<input type="radio" id="human">
-							<label for="human">Yes!</label>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<button type="submit">Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-				</li>
-			</ul>
-		</form>
+<div id="connect">
+	<div class="connect-wrap">
+		<div class="connect-items">
+			<a href="https://github.com/DevRice" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a href="https://freecodecamp.com/devrice" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/thealexnite" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/alex.nite.526" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		</div>
 	</div>
 </div>
 
+<footer>Copyright Alex Nite. 2017</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
